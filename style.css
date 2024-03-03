@@ -1,0 +1,281 @@
+/* .cross {
+    background: red;
+    height: 100px;
+    position: relative;
+    width: 20px;
+  }
+  .cross:after {
+    background: red;
+    content: "";
+    height: 20px;
+    left: -38px;
+    position: absolute;
+    top: 40px;
+    width: 100px;
+  } */
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    width:60%;
+   background-color: rgb(204, 98, 253);
+    position: relative;
+    padding-top:50px;
+}
+
+  .cross {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    opacity: 0.9;
+  }
+  .cross:before,
+  .cross:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    box-shadow: 0 0 10px 0px;
+    /* opacity: 0.7; */
+  }
+  .cross:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+
+  @keyframes img{
+    0%{
+        transform:scale(0.1) translate(0px, 0px) ;
+    }
+    50%{
+        transform:scale(1) translate(100px, 0px) ;
+    }
+    100%{
+        transform:scale(0.1) translate(0px, 0px) ;
+    }
+    
+  }
+  @keyframes img-2{
+    0%{
+        transform:scale(0.1) translate(200px, 0px) ;
+    }
+    50%{
+        transform:scale(1) translate(100px, 0px) ;
+    }
+    100%{
+        transform:scale(0.1) translate(200px, 0px) ;
+    }
+    
+  }
+  @keyframes img-3{
+    0%{
+        transform:scale(0.1) translate(400px, 0px) ;
+    }
+    50%{
+        transform:scale(1) translate(100px, 0px) ;
+    }
+    100%{
+        transform:scale(0.1) translate(400px, 0px) ;
+    }
+    
+  }
+  @keyframes img-4{
+    0%{
+        transform:scale(0.1) translate(600px, 0px) ;
+    }
+    50%{
+        transform:scale(1) translate(100px, 0px) ;
+    }
+    100%{
+        transform:scale(0.1) translate(600px, 0px) ;
+    }
+    
+  }
+  @keyframes img-5{
+    0%{
+        transform:scale(0.1) translate(800px, 0px) ;
+    }
+    50%{
+        transform:scale(1) translate(100px, 0px) ;
+    }
+    100%{
+        transform:scale(0.1) translate(800px, 0px) ;
+    }
+    
+  }
+  @keyframes img-6{
+    0%{
+        transform:scale(0.1) translate(1000px, 0px) ;
+    }
+    50%{
+        transform:scale(1) translate(100px, 0px) ;
+    }
+    100%{
+        transform:scale(0.1) translate(1000px, 0px) ;
+    }
+    
+  }
+
+  @keyframes img-11{
+    0%{
+        transform:scale(0.1) translate(0px, 200px) 
+    }
+    50%{
+        transform:scale(1) translate(100px, 0px) ;
+    }
+    100%{
+        transform:scale(0.1) translate(0px, 200px) 
+    }
+    
+  }
+  @keyframes img-12{
+    0%{
+        transform:scale(0.1) translate(200px, 200px) ;
+    }
+    50%{
+        transform:scale(1) translate(100px, 0px) ;
+    }
+    100%{
+        transform:scale(0.1) translate(200px, 200px) ;
+    }
+    
+  }
+  @keyframes img-13{
+    0%{
+        transform:scale(0.1) translate(400px, 200px) 
+    }
+    50%{
+        transform:scale(1) translate(100px, 0px) ;
+    }
+    100%{
+        transform:scale(0.1) translate(400px, 200px) 
+    }
+    
+  }
+  @keyframes img-14{
+    0%{
+        transform:scale(0.1) translate(600px, 200px) 
+    }
+    50%{
+        transform:scale(1) translate(100px, 0px) ;
+    }
+    100%{
+        transform:scale(0.1) translate(600px, 200px) 
+    }
+    
+  }
+  @keyframes img-15{
+    0%{
+        transform:scale(0.1) translate(800px, 200px) 
+    }
+    50%{
+        transform:scale(1) translate(100px, 0px) ;
+    }
+    100%{
+        transform:scale(0.1) translate(800px, 200px) 
+    }
+    
+  }
+  @keyframes img-16{
+    0%{
+        transform:scale(0.1) translate(1000px, 200px) 
+    }
+    50%{
+        transform:scale(1) translate(100px, 0px) ;
+    }
+    100%{
+        transform:scale(0.1) translate(1000px, 200px) 
+    }
+    
+  }
+  .item{
+    animation-iteration-count: infinite;
+    position: absolute;
+    
+  }
+  .item-1{
+    transform:scale(0.1) translate(0px, 0px) ;
+    animation-name:img;
+    animation-duration: 5s;
+  }
+  .item-2{
+    transform:scale(0.1) translate(200px, 0px) ;
+    animation-name:img-2;
+    animation-duration: 5s;
+    animation-delay: 1s;
+  }
+  .item-3{
+    transform:scale(0.1) translate(400px, 0px) ;
+    animation-name:img-3;
+    animation-duration: 5s;
+    animation-delay: 2s;
+  }
+  .item-4{
+    transform:scale(0.1) translate(600px, 0px) ;
+    animation-name:img-4;
+    animation-duration: 5s;
+    animation-delay: 3s;
+  }
+  .item-5{
+    transform:scale(0.1) translate(800px, 0px) ;
+    animation-name:img-5;
+    animation-duration: 5s;
+    animation-delay: 4s;
+  }
+
+  .item-6{
+    transform:scale(0.1) translate(1000px, 0px) ;
+    animation-name:img-6;
+    animation-duration: 5s;
+    animation-delay: 5s;
+  }
+
+  
+  .item-11{
+    transform:scale(0.1) translate(0px, 200px) ;
+    animation-name:img-11;
+    animation-duration: 5s;
+    animation-delay: 6s;
+  }
+
+  .item-12{
+    transform:scale(0.1) translate(200px, 200px) ;
+    animation-name:img-12;
+    animation-duration: 5s;
+    animation-delay: 7s;
+  }
+  .item-13{
+    transform:scale(0.1) translate(400px, 200px) ;
+    animation-name:img-13;
+    animation-duration: 5s;
+    animation-delay: 8s;
+  }
+  .item-14{
+    transform:scale(0.1) translate(600px, 200px) ;
+    animation-name:img-14;
+    animation-duration: 5s;
+    animation-delay: 9s;
+  }
+
+  .item-15{
+    transform:scale(0.1) translate(800px, 200px) ;
+    animation-name:img-15;
+    animation-duration: 5s;
+    animation-delay: 10s;
+  }
+
+  .item-16{
+    transform:scale(0.1) translate(1000px, 200px) ;
+    animation-name:img-16;
+    animation-duration: 5s;
+    animation-delay: 11s;
+  }
